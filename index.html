@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck2Spark</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="ascii-art">
+        <pre>
+_____             _    ___   _____                  _    
+|  __ \           | |  |__ \ / ____|                | |   
+| |  | |_   _  ___| | __  ) | (___  _ __   __ _ _ __| | __
+| |  | | | | |/ __| |/ / / / \___ \| '_ \ / _` | '__| |/ /
+| |__| | |_| | (__|   < / /_ ____) | |_) | (_| | |  |   < 
+|_____/ \__,_|\___|_|\_\____|_____/| .__/ \__,_|_|  |_|\_\
+                                    | |                    
+                                    |_|                    
+        </pre>
+    </header>
+
+    <main>
+        <div class="box-container">
+            <div class="ip-section text-box">
+                <textarea id="input-code" placeholder="Paste your Ducky script here..."></textarea>
+                <button class="box-buttons" id="clear-input"><i class="fa-solid fa-xmark"></i></button>
+                <button class="box-buttons" id="past-input"><i class="fa-regular fa-paste"></i></button>
+                <button class="box-main-btn" id="convert-btn">Convert</button>
+            </div>
+            <div class="op-section text-box">
+                <textarea id="output-code" placeholder="Converted DigiSpark code will appear here." readonly></textarea>
+                <button class="box-buttons" id="clear-output"><i class="fa-solid fa-xmark"></i></button>
+                <button class="box-buttons" id="copy-output"><i class="fa-regular fa-copy"></i></button>
+                <button class="box-main-btn" id="download-btn" disabled>Download</button>
+            </div>
+        </div>
+
+        <div class="terminal-container">
+            <div class="terminal-output" id="terminal-container">
+                <p>
+                    <span class="terminal-prompt">Duck2Spark:~$&nbsp;</span>
+                    <span class="terminal-stdout">Welcome to Duck2Spark</span>
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-links">
+            <span href="#">© 2025 Duck2Spark</span>
+            <span>|</span>
+            <a href="https://github.com/fCoderSociety/Duck2Spark" target="_blank">GitHub</a>
+            <span>|</span>
+            <a href="https://github.com/fcodersociety/duck2spark/blob/main/LICENSE" target="_blank">License</a>
+        </div>
+        <div class="footer-logo">
+            <span id="footer-org">fCoderSociety™</span>
+        </div>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/duck2spark.js"></scriptsrc></script>
+    </footer>
+
+</body>
+
+</html>
